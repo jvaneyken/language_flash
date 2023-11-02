@@ -1,10 +1,12 @@
-import Card from "./Card";
+import Card from "./CardFront";
+import CardBack from './CardBack';
 
 function DailyCardList() {
     return(
         <>
-        I am the Daily Card List
-        <Card />
+            I am the Daily Card List
+            <Card />
+            <CardBack />
         </>
     )
 }

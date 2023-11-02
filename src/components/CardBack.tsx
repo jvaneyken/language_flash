@@ -1,11 +1,7 @@
-function Card() {
+function CardBack() {
     return(
         <>
-            I am a Card component
-            <div>Front of Card</div>
-            <div>Word</div>
-
-            <div>Back of Card</div>
+            I am a Card Back Component
             <div>Translation</div>
             <div>Did you get it right?</div>
             <label>Yes
@@ -18,4 +14,4 @@ function Card() {
     )
 }
 
-export default Card;
+export default CardBack;
