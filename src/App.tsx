@@ -1,12 +1,13 @@
 import './App.css'
-import Card from './components/Card'
+import DailyCardList from './components/DailyCardList'
 
 function App() {
 
   return (
     <>
       I am the App Component
-      <Card />
+      
+      <DailyCardList />
     </>
   )
 }
