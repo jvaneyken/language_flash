@@ -1,15 +1,24 @@
-function CardBack() {
+import './CardBack.css'
+
+interface CardBackProps {
+    translation: string,
+    sampleSentenceTranslation: string
+}
+
+function CardBack({ translation, sampleSentenceTranslation }: CardBackProps) {
     return(
         <>
-            I am a Card Back Component
-            <div>Translation</div>
-            <div>Did you get it right?</div>
-            <label>Yes
-                <input type="checkbox" />
-            </label>
-            <label>No
-                <input type="checkbox" />
-            </label>
+            <div className='card-back'>
+                <div>{translation}</div>
+                <div>{sampleSentenceTranslation}</div>
+                <div>Did you get it right?</div>
+                <label>Yes
+                    <input type="checkbox" />
+                </label>
+                <label>No
+                    <input type="checkbox" />
+                </label>
+            </div>
         </>
     )
 }

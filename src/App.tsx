@@ -5,8 +5,6 @@ function App() {
 
   return (
     <>
-      I am the App Component
-      
       <DailyCardList />
     </>
   )

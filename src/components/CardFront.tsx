@@ -1,8 +1,17 @@
-function CardFront() {
+import './CardFront.css';
+
+interface CardFrontProps {
+    word: string,
+    sampleSentence: string
+}
+
+function CardFront({ word, sampleSentence }: CardFrontProps) {
     return(
         <>
-            I am a Card Front component
-            <div>Word</div>
+            <div className='card-front'>
+                <div>Word: {word}</div>
+                <div>{sampleSentence}</div>
+            </div>
         </>
     )
 }
