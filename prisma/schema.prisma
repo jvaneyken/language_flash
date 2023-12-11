@@ -11,12 +11,12 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email         String   @unique
-  dateCreated   DateTime @default(now())
-  username      String   @unique @db.VarChar(60)
-  password      String   @db.VarChar(60)
-  cards Card[]
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  dateCreated DateTime @default(now())
+  username    String   @unique @db.VarChar(60)
+  password    String   @db.VarChar(60)
+  cards       Card[]
 }
 
 model Card {
@@ -26,6 +26,6 @@ model Card {
   sampleSentence            String
   sampleSentenceTranslation String
   bucket                    Int
-  owner                     User   @relation(fields: [ownerId], references: [id])
-  ownerId                   Int
+  owner                     User?   @relation(fields: [ownerId], references: [id])
+  ownerId                   Int?
 }
