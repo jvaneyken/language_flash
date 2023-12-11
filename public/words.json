@@ -4,13 +4,15 @@
             "word": "o",
             "translation": "the",
             "sampleSentence": "Ele é o único que me faz feliz.",
-            "sampleSentenceTranslation": "He is the one who makes me happy"
+            "sampleSentenceTranslation": "He is the one who makes me happy",
+            "bucket": 1
         },
         {
             "word": "de",
             "translation": "of, from",
             "sampleSentence": "Eu preciso ver a página do livro",
-            "sampleSentenceTranslation": "I need to see the page of the book"
+            "sampleSentenceTranslation": "I need to see the page of the book",
+            "bucket": 1
         }
     ]
 }
